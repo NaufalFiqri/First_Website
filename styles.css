@@ -37,6 +37,19 @@ li{
 
 .logo{
     width: 40px;
+    margin-right: 12px;
+}
+
+.LogoNBrand{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.LogoNBrand:hover{
+    color: #5011CC;
 }
 
 .nav__container{
@@ -47,4 +60,35 @@ li{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.nav__link{
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #243e63;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    color: #6415ff;
+}
+
+.nav__link--secondary{
+    margin-left: 48px;
+}
+
+.nav__link--primary{
+    color: white;
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border-radius: 9999px;
+}
+
+.nav__link--primary:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #5011CC;
 }
