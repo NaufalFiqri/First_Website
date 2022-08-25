@@ -39,9 +39,18 @@ li{
 
 h2{
     font-size: 48px;
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 h5{
+    color: #6415ff;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
     display: block;
 }
 
@@ -252,20 +261,6 @@ header{
     flex-direction: column;
     text-align: center;
     padding: 80px 0;
-}
-
-.features__features{
-    margin-bottom: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.features__h2{
-    width: 100%;
-    font-weight: 900;
-    letter-spacing: 1px;
 }
 
 .features__para{
