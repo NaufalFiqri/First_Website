@@ -37,6 +37,18 @@ li{
     list-style-type: none;
 }
 
+.color--purple{
+    color: #6415ff;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
 .link__hover-effect::after{
     content: "";
     position: absolute;
@@ -124,3 +136,6 @@ li{
 .personal__logo:hover{
     color: #6415ff;
 }
+
+/* HEADER */
+
