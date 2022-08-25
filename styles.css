@@ -7,6 +7,10 @@
     border: 0 solid #e5e7eb;
 }
 
+*:focus {
+    outline: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -43,6 +47,23 @@ li{
     list-style-type: none;
 }
 
+.btn {
+    background-color: #7342d6;
+    color: white;
+    padding: 8px 24px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
 h2{
     color: #243e63;
     font-size: 48px;
@@ -63,6 +84,10 @@ h5{
 
 .color--purple{
     color: #6415ff;
+}
+
+.color--white{
+    color: white;
 }
 
 .flex{
@@ -502,19 +527,129 @@ header{
 /* PRICING */
 
 .pricing{
+    padding: 96px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.plans{
+.pricing__plans--list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.plan{
+.plan__top {
+    height: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 30px 30px 0 0;
+}
+
+.top__personal {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);;
+}
+
+.personal__btn {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    font-size: 14px;
+    padding: 16px 32px;
+}
+
+.pricing__plan--personal,
+.pricing__plan--business,
+.pricing__plan--enterprise {
     width: calc(100% / 3);
-    display: flex;
-    flex-direction: column;
+    margin: 64px 32px 0 0;
+    text-align: center;
+}
+
+.plan__label {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan__price {
+    color: #1a202c;
+    font: 48px inter, system-ui;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.plan__period {
+    color: #a0aec0;
+    font: 16px inter, system-ui;
+}
+
+.plan__top--sect,
+.plan__mid--sect,
+.plan__low--sect {
+    border: 1px solid #e5e7eb;
+}
+
+.plan__top--sect {
+    padding: 32px 0;
+}
+
+.plan__mid--sect { 
+    padding: 32px;
+}
+
+.plan__low--sect {
+    padding: 32px 64px;
+    border-radius: 0 0 16px 16px;
+}
+
+.plan__for--individual {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+.plan__for {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.plan__perk {
+    color: #718096;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.top__business,
+.business__top--sect,
+.business__mid--sect {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-bottom: none;
+}
+
+.business__top--sect {
+    border-top: none;
+}
+
+.pricing__plan--business {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.business__btn {
+    background-color: white;
+    font-weight: bold;
+    padding: 16px 32px;
+    font-size: 14px;
+}
+
+.enterprise__btn {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    padding: 16px 32px;
+    font-size: 14px;
+}
+
+.top__enterprise {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
