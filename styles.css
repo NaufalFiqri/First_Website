@@ -34,7 +34,7 @@ img{
 }
 
 ul{
-    display: flex;
+    list-style: none;
 }
   
 li{
@@ -359,3 +359,61 @@ header{
     width: 50%;
 }
 
+/* STEPS */
+
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__img-wrapper{
+    width: 50%;
+}
+
+.steps__title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.steps__list--wrapper{
+    margin-top: 32px;
+    
+}
+
+.steps__list{
+    margin-top: 32px;
+    display: flex;
+}
+
+.steps__list--number{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1;
+    color: #cbd5e0;
+}
+
+.steps__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    max-width: 320px;
+}
+
+.steps__info--title{
+    color: #243e63;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.steps__info--desctiption{
+    margin-top: 12px;
+    max-width: 100%;
+    line-height: 2;
+    font-size: 14px;
+    font-weight: 500;
+}
